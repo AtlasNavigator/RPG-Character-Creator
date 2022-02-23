@@ -1,8 +1,13 @@
+const readLine = require('readline-sync');
+
 let diceRolled = [];
 let character = {
   
 }
 
+character.name = readLine.question("Hello, you must be new around where? What is your name: "); //Ask for a character name
+rollMultipleDice(5);
+character.hp = sumOfDice(diceRolled);
 character.strength = rollAStat();
 character.patience = rollAStat();
 character.enginuity = rollAStat();
