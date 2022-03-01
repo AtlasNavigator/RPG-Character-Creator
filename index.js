@@ -3,14 +3,12 @@ const readLine = require('readline-sync');
 let diceRolled = [];
 let jobs = ['Cook', 'Theif', 'Prostitute', 'Cartographer', 'Merchant', 'Nobility'] //Possible jobs
 let gender = ['male', 'female'] //Possible Gender
-let reputation = ['very poor', 'poor', 'neutral', 'good', 'very good', 'outstanding'] //Possible reputation
-let character = {
-  
-}
+let reputation = ['very poor', 'poor', 'neutral', 'good', 'very good', 'outstanding']//Possible reputation
 
 for (let i = 0; i < 3; i++){
   generate();
 }
+
 
 function generate(){
   let name1 = readLine.question("What is your name: ");//Ask for a character name
@@ -26,8 +24,7 @@ function generate(){
   console.log(`Intelligence: ${rollAStat()}`);
   console.log(`Stamina: ${rollAStat()}`);
   console.log(`Looks: ${rollAStat()}`);
-  console.log(`Reputation: ${rollAStat()}`);
-  console.log(character);
+  console.log(`Reputation: ${randomReputation()}`);
   console.log(` `);
 } //The actual character generator thing
 
