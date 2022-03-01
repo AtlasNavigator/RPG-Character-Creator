@@ -12,7 +12,7 @@ for (let i = 0; i < 3; i++){
 
 function generate(){
   let name1 = readLine.question("What is your name: ");//Ask for a character name
-  console.log(` `);
+  console.log(`\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\`);
   rollMultipleDice(5);
   console.log(`Name: ${name1}`);
   console.log(`Gender: ${randomGender()}`);
@@ -25,7 +25,8 @@ function generate(){
   console.log(`Stamina: ${rollAStat()}`);
   console.log(`Looks: ${rollAStat()}`);
   console.log(`Reputation: ${randomReputation()}`);
-  console.log(` `);
+  console.log(`\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\`);
+  console.log(' ');
 } //The actual character generator thing
 
 function rollADie(){
